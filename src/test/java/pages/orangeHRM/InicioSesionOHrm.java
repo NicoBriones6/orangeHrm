@@ -21,4 +21,20 @@ public class InicioSesionOHrm {
     public static WebElement getNameTitleMenu(WebDriver driver){
         return FactoryWebElements.iniciaConXpath(driver,"//h6[contains(., 'Dashboard')]");
     }
+
+    public static WebElement getInvalidCredentials(WebDriver driver){
+        return FactoryWebElements.iniciaConXpath(driver,"//div[@class='oxd-alert-content oxd-alert-content--error']");
+    }
+
+    public static WebElement getForgotPasswordButton(WebDriver driver){
+        return FactoryWebElements.iniciaConXpath(driver,"//p[contains(.,'Forgot your password?')]");
+    }
+
+    public static WebElement getResetButtonPassword(WebDriver driver){
+       return FactoryWebElements.iniciaConXpath(driver," //button[@type='submit'] | //button[contains(.,'Reset Password')]");
+    }
+
+    public static WebElement getResetPasswordMessage(WebDriver driver){
+        return FactoryWebElements.iniciaConXpath(driver,"//h6[contains(.,'Reset Password link sent successfully')]");
+    }
 }

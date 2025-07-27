@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "definitions",
-        tags = "@testLogin", //Este algo hay que modificarlo
+        tags = "@testCambioContraseña", //Este algo hay que modificarlo
         publish = true  //Aqui definimos si queremos que Cucumber suba el reporte a su web o no
 )
 
